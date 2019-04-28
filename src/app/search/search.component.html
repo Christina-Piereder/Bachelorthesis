@@ -1,0 +1,8 @@
+<form class="form-inline md-form form-sm active-purple-2" (keydown.enter)="searchMovies(searchTerm.value)">
+  <input class="form-control form-control-sm mr-3 w-75"
+         type="text" placeholder="Search for Movie ..."
+         #searchTerm mdbInput>
+  <i [ngClass]="isLoading ? 'fa fa-spinner fa-spin' : 'fa fa-search'"
+     (click)="searchMovies(searchTerm.value)">
+  </i>
+</form>

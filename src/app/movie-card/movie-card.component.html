@@ -1,0 +1,21 @@
+<mdb-card>
+  <mdb-card-img *ngIf="movie.poster_path" src="{{baseUrl + movie?.poster_path}}"></mdb-card-img>
+  <mdb-card-img *ngIf="!movie.poster_path" src="../../assets/placeholder.png" class="placeholder"></mdb-card-img>
+  <mdb-card-body>
+    <mdb-card-title>
+      <h6>
+        <a routerLink="/detail/{{movie.id}}">{{movie.title}}</a>
+      </h6>
+    </mdb-card-title>
+    <p><strong>Release Date: </strong>{{movie.release_date}}</p>
+    <p>
+      <strong>Rating: </strong>
+      <mdb-badge success="true" *ngIf="movie.vote_average">
+        {{movie.vote_average}}
+        <i class="fa fa-star"></i>
+      </mdb-badge>
+    </p>
+
+  </mdb-card-body>
+</mdb-card>
+

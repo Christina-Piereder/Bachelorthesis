@@ -1,0 +1,30 @@
+<div class="row" style="margin: 10px;">
+  <div class="col-sm-6 col-md-4 col-lg-3 col-xs-6" *ngFor="let movie of movies">
+    <app-movie-card [movie]="movie"></app-movie-card>
+  </div>
+</div>
+
+<nav>
+  <ul class="pagination pg-purple justify-content-center">
+    <li class="page-item" (click)="goBackwards()">
+      <a class="page-link" mdbWavesEffect>
+        <span>&laquo;</span>
+      </a>
+    </li>
+
+    <ng-container *ngFor="let page of shownPages">
+      <li class="page-item active" *ngIf="page == activePage">
+        <a class="page-link" mdbWavesEffect>{{page}}</a>
+      </li>
+      <li class="page item" *ngIf="page != activePage" (click)="goToPage(page)">
+        <a class="page-link" mdbWavesEffect>{{page}}</a>
+      </li>
+    </ng-container>
+
+    <li class="page-item" (click)="goForward()">
+      <a class="page-link" mdbWavesEffect>
+        <span>&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>

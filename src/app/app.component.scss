@@ -1,0 +1,51 @@
+mat-slider {
+  width: 100%;
+}
+
+::ng-deep .mat-slider-track-wrapper {
+  background-color: white;
+}
+
+#sidebar {
+  margin-top: 40px;
+}
+
+mat-selection-list {
+  height: 400px;
+  overflow-y: scroll;
+  -webkit-text-fill-color: white;
+}
+
+.container-fluid {
+  &.app-container {
+    background: black;
+  }
+}
+
+h4 {
+  -webkit-text-fill-color: #6a1b9a;
+  text-align: center;
+}
+
+::ng-deep .mat-pseudo-checkbox {
+  color: white;
+}
+
+.mat-form-field {
+  width: 150px;
+  margin-left: 30px;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  color: white;
+}
+
+::ng-deep .mat-datepicker-toggle-default-icon {
+  color: white;
+}
+
+.fa {
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

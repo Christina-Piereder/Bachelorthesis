@@ -1,0 +1,14 @@
+.active-purple-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #6a1b9a;
+  box-shadow: 0 1px 0 0 #6a1b9a;
+}
+
+.active-purple .fa,
+.active-purple-2 .fa {
+  color: #6a1b9a;
+}
+
+.form-control {
+  margin: 30px;
+  align-items: flex-end;
+}
